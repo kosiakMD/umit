@@ -1,0 +1,9 @@
+.idea/
+.idea/dictionaries/
+.idea/jsLibraryMappings.xml
+.idea/libraries/
+.idea/modules.xml
+.idea/umit.iml
+.idea/vcs.xml
+.idea/workspace.xml
+Would skip repository todos/
