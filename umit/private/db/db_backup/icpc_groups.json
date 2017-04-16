@@ -1,0 +1,18 @@
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee1"},"letter":"0","count":41.0,"name":"Коди процесів"}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee2"},"letter":"A","count":51.0,"name":"Загальні та неспецифічні"}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee3"},"letter":"B","count":25.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee4"},"letter":"D","count":58.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee5"},"letter":"F","count":35.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee6"},"letter":"H","count":28.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee7"},"letter":"K","count":41.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee8"},"letter":"L","count":53.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cee9"},"letter":"N","count":37.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceea"},"letter":"P","count":43.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceeb"},"letter":"R","count":43.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceec"},"letter":"S","count":58.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceed"},"letter":"T","count":31.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceee"},"letter":"U","count":28.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16ceef"},"letter":"W","count":39.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cef0"},"letter":"X","count":53.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cef1"},"letter":"Y","count":36.0,"name":""}
+{"_id":{"$oid":"58d4e03c2dedcde11c16cef2"},"letter":"Z","count":27.0,"name":""}

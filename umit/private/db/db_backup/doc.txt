@@ -1,0 +1,11 @@
+
+## Export
+
+mongoexport --host 127.0.0.1:5001 --db meteor --collection icpc_groups --out icpc_groups.json
+mongoexport --host 127.0.0.1:5001 --db meteor --collection icpc_icpc --out icpc_icpc.json
+
+
+## Import
+
+mongoimport --db myapp --collection icpc_groups --type json --file ./db_backup/icpc_groups.json
+mongoimport --db myapp --collection icpc_icpc --type json --file ./db_backup/icpc_icpc.json
