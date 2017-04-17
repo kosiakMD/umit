@@ -27,3 +27,4 @@ accounts-github
 accounts-google
 service-configuration
 kadira:react-layout
+useraccounts:semantic-ui

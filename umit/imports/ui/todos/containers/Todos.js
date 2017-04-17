@@ -69,7 +69,7 @@ class Todo extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div id="todoEntry" className="container">
                 <header>
                     <h1>Todo List ({this.props.incompleteCount})</h1>
 

@@ -7,11 +7,12 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { render } from 'react-dom';
-import { StaticRouter, BrowserRouter as Router, Route, Switch, Redirect, Link, NavLink, Match } from 'react-router-dom'
+import { StaticRouter, BrowserRouter as Router, Route, Switch, Redirect, Link, NavLink, Match } from 'react-router-dom';
 
 // import { BrowserRouter } from 'react-router-dom';
 
 import App from './ui/App';
+import TopMenu from './ui/shared/TopMenu';
 import Todos from './ui/todos/containers/Todos';
 import Icpc from './ui/icpc/containers/Icpc';
 import Group from './ui/icpc/containers/Group';
@@ -38,12 +39,12 @@ Meteor.startup(() => {
             <div>
                 {/*<Redirect from="/" to="/index" />*/}
                 <Route exact path="/" /*component={App}*/>
-                    <App>
+                    <TopMenu handler={()=>{console.log('handler',arguments)}}>
                         <Route exact path="/todo" component={Todos}/>
                         <Route exact path="/icpc" component={Icpc}/>
                         <Route exact path="/icpc/:group" component={Group}/>
                         <Route exact path="/icpc/:group/:diagnoseID" component={Diagnose}/>
-                    </App>
+                    </TopMenu>
                 </Route>
             </div>
         </Router>,

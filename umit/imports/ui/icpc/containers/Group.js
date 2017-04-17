@@ -16,7 +16,6 @@ import Element from '../components/DiagnoseElement';
 import { Form, List, Button, Input } from 'semantic-ui-react';
 import BreadCramps from '../../shared/BreadCramps';
 
-// App component - represents the whole app
 /*export default */class Group extends Component {
     static propTypes = {
         // diagnoses: PropTypes.array.isRequired,
@@ -26,21 +25,27 @@ import BreadCramps from '../../shared/BreadCramps';
     constructor(props) {
         super();
         autoBind(this);
-        console.log('constructor',props)
+        console.log('constructor',props.asd)
 
         let group = props.match.params.group;
+        // console.log('group',group);
         this.state = {
             hideCompleted: false,
             loading: true,
             savingGroup: false,
             group: group,
-            currentGroupName: props.location.state.name,
-            groupName: props.location.state.name,
-            letter: props.location.state.letter,
-            count: props.location.state.count,
-            id: props.location.state._id,
+            currentGroupName: group,
             diagnoses: [],
         };
+        if (props.location.state) {
+            this.state = { ...this.state, ...{
+                currentGroupName: props.location.state.name,
+                groupName: props.location.state.name,
+                letter: props.location.state.letter,
+                count: props.location.state.count,
+                id: props.location.state._id,
+            }}
+        }
 
         Meteor.call('IcpcCollection.getListByLetter', group, (error, result)=>{
             this.setState({diagnoses: result},()=>{});
@@ -126,12 +131,13 @@ import BreadCramps from '../../shared/BreadCramps';
     }
 }
 
-export default createContainer(({ letter }) => {
-    console.log('createContainer', letter, arguments)
+export default createContainer(({ params }) => {
+    console.log('createContainer', params, 'args', arguments)
     return {
         // diagnoses: Meteor.call('IcpcCollection.getListByLetter', 'A'),
         // diagnoses: IcpcCollection.find({letter: 'A'}, {letter: 1, name: 1}).fetch(),
         // incompleteCount: IcpcCollection.find({ checked: { $ne: true } }).count(),
         currentUser: Meteor.user(),
+        asd: params,
     };
 }, Group);

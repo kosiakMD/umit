@@ -7,7 +7,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Meteor } from 'meteor/meteor';
 // import { IcpcCollection } from '../../api/group.js';
-import { List, Item } from 'semantic-ui-react';
+import { List, Item, Label } from 'semantic-ui-react';
 import { Link, NavLink, Match } from 'react-router-dom';
 
 
@@ -49,10 +49,11 @@ export default class Element extends Component {
 
                         <List.Description >
 
-                            <span className={'text ' + groupClassName}>{letter} - {count} - {name}</span>
+                            <span className={'text ' + groupClassName}>{letter} - {name}</span>
 
                         </List.Description>
                     </List.Content>
+                    <Label color='olive' >{count}</Label>
                 </Link>
             </List.Item>
         );

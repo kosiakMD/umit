@@ -73,17 +73,6 @@ class Icpc extends Component {
                     <BreadCramps history={this.props.history}/>
 
                     <h1>ICPC List ({this.props.incompleteCount})</h1>
-
-                    <label className="hide-completed">
-                        <input
-                            type="checkbox"
-                            readOnly
-                            checked={this.state.hideCompleted}
-                            onClick={this.toggleHideCompleted}
-                        />
-                        Hide Completed Elements
-                    </label>
-
                 </header>
 
                 <List divided relaxed link selection>
@@ -95,7 +84,7 @@ class Icpc extends Component {
 }
 
 export default createContainer(() => {
-    console.log(Meteor.call('GroupCollection.get'))
+    // console.log(Meteor.call('GroupCollection.get'))
     return {
         // groups: Meteor.call('GroupCollection.get'),
         groups: GroupCollection.find().fetch(),

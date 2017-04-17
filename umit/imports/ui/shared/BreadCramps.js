@@ -5,7 +5,7 @@
  * Time: 23:47
  */
 import React, { Component, PropTypes } from 'react';
-import { Breadcrumb } from 'semantic-ui-react'
+import { Breadcrumb } from 'semantic-ui-react';
 
 export default class BreadCramps extends Component {
 
