@@ -49,7 +49,8 @@ export default class Element extends Component {
 
                         <List.Description >
 
-                            <span className={'text ' + groupClassName}>{letter} - {name}</span>
+                            <Label circular color={'blue'}>{letter}</Label>
+                            <span className={'text ' + groupClassName}>{name}</span>
 
                         </List.Description>
                     </List.Content>
